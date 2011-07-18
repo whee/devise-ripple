@@ -20,7 +20,7 @@ So far, it is in a usable state *for me*, in the following environment:
     class User
       include Ripple::Document
 
-      devise :registerable, :confirmable :database_authenticatable, :recoverable, :validatable
+      devise :registerable, :confirmable, :database_authenticatable, :recoverable, :validatable
 
       property :name, String
       property :email, String, :presence => true
