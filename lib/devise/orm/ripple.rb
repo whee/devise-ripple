@@ -16,6 +16,7 @@ module Devise
         include Devise::Schema
 
         def apply_devise_schema(name, type, options={})
+          type = Time if type == DateTime
           return unless Devise.apply_schema
           property name, type
         end        
